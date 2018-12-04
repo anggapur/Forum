@@ -1,0 +1,28 @@
+KETENTUAN UMUM
+pakai database db_forum.sql yang tak kirim, 
+database di kalian pakai "db_forum"
+gunakan file koneksi yang tak kasi(WAJIB)[koneksi.php], biar gak ribet pas nyatuin
+
+DEADLINE : Jumat , 7 Desember 2018 23.59 WITA
+
+Pakai git
+ini link gitnya : 
+
+1. Register => Dito
+	Mengisi username,password, email, nama
+
+2. Login => Angga Pram
+	Mengisi username dan password
+
+3. CRUD Post => Frisca
+	Tambah post
+	Edit post
+	Delete post
+
+4. Komentar => Angga Pur
+	Komentar di post
+	Kometar di komentar
+
+5. Edit profil => Yoel
+	Mengubah username,password, email, nama, foto
+
