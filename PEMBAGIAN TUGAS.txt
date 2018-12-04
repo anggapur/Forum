@@ -6,7 +6,7 @@ gunakan file koneksi yang tak kasi(WAJIB)[koneksi.php], biar gak ribet pas nyatu
 DEADLINE : Jumat , 7 Desember 2018 23.59 WITA
 
 Pakai git
-ini link gitnya : 
+ini link gitnya : https://github.com/anggapur/Forum.git
 
 1. Register => Dito
 	Mengisi username,password, email, nama

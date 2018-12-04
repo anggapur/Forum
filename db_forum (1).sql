@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2018 at 07:48 AM
+-- Generation Time: Dec 04, 2018 at 08:06 AM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -33,7 +33,8 @@ CREATE TABLE `comment` (
   `user_id_comment` int(11) DEFAULT NULL,
   `post_or_comment_id` int(11) DEFAULT NULL,
   `comment` text,
-  `jenis` enum('comment','post') DEFAULT NULL
+  `jenis` enum('comment','post') DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -46,7 +47,8 @@ CREATE TABLE `post` (
   `id_post` int(11) NOT NULL,
   `user_id` int(11) DEFAULT NULL,
   `judul` varchar(100) DEFAULT NULL,
-  `deskripsi` text
+  `deskripsi` text,
+  `created_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
