@@ -21,13 +21,13 @@ if(isset($_POST["login"]))
     $result = mysqli_query($koneksi,$sql) or die(mysqli_error($koneksi));      
     $count = mysqli_num_rows($result);
     //mengambil data untuk satu baris pada database
-    $data = $result->fetch_array(MYSQLI_NUM);
+    $data = mysqli_fetch_assoc($result);
   if($count > 0)
  {
   #mengecek password
-    if($_POST["password"] == $data[3])
+    if($_POST["password"] == $data["password"])
     {
-        $_SESSION['id_user'] = $data[0];
+        $_SESSION['id_user'] = $data["id_user"];
         $_SESSION['username'] = $username;
         header("location:welcome.php");
     }
