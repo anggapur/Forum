@@ -22,10 +22,12 @@ if(isset($_POST["login"]))
     $count = mysqli_num_rows($result);
     //mengambil data untuk satu baris pada database
     $data = mysqli_fetch_assoc($result);
+    $pass = md5($_POST["password"]);
   if($count > 0)
  {
+
   #mengecek password
-    if($_POST["password"] == $data["password"])
+    if($pass == $data["password"])
     {
         $_SESSION['id_user'] = $data["id_user"];
         $_SESSION['username'] = $username;
@@ -33,7 +35,7 @@ if(isset($_POST["login"]))
     }
     else
     {
-      $message = "<label>Password Salah</label>";    
+      $message = "<label>Password Salah</label>";          
     }
 }
  else
